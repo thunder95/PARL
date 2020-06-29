@@ -1,0 +1,5 @@
+尝试了两种模型训练股票
+
+可分别运行下面的命令：
+python stock_pg.py
+python stock_ddpg.py

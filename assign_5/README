@@ -1,0 +1,6 @@
+1. 安装SUMO：
+	参考：https://blog.csdn.net/zhixiting5325/article/details/79302244
+	可能遇到缺库的问题：sudo apt-get install libxerces-c-dev
+
+2
+  

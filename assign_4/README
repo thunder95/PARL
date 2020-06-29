@@ -1,0 +1,19 @@
+
+1. 安装RLBENCH
+git clone https://github.com/stepjam/RLBench
+python setup.py install
+
+
+2. 其他依赖
+参考：https://zhuanlan.zhihu.com/p/109281578
+
+3. 安装V-REP
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sun/hulei/CoppeliaSim_Edu_V4_0_0_Ubuntu18_04
+
+export COPPELIASIM_ROOT=/home/sun/hulei/CoppeliaSim_Edu_V4_0_0_Ubuntu18_04
+ pip install pyquaternion
+
+4. 运行命令：
+python RLBench.py 
+
