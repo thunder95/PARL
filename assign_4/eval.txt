@@ -1,0 +1,75 @@
+2020-06-30 08:49:45,496 - root - INFO - Resetting task: reach_target
+2020-06-30 08:49:53,770 - root - INFO - Resetting task: reach_target
+2020-06-30 08:55:33,466 - root - INFO - Resetting task: reach_target
+2020-06-30 08:55:45,418 - root - INFO - Resetting task: reach_target
+2020-06-30 08:55:48,352 - root - INFO - Episodes 1, Evaluate reward: 1
+2020-06-30 08:57:42,152 - root - INFO - Resetting task: reach_target
+2020-06-30 08:58:05,275 - root - INFO - Resetting task: reach_target
+2020-06-30 08:58:35,837 - root - INFO - Episodes 1, Evaluate reward: 1
+2020-06-30 09:03:04,979 - root - INFO - Resetting task: reach_target
+2020-06-30 09:03:06,413 - root - INFO - Resetting task: reach_target
+2020-06-30 09:03:53,796 - root - INFO - Resetting task: reach_target
+2020-06-30 09:03:55,232 - root - INFO - Resetting task: reach_target
+2020-06-30 09:04:25,041 - root - INFO - Resetting task: reach_target
+2020-06-30 09:04:35,676 - root - INFO - Resetting task: reach_target
+2020-06-30 09:04:38,414 - root - INFO - Episodes 1, Evaluate reward: 1
+2020-06-30 09:05:19,999 - root - INFO - Resetting task: reach_target
+2020-06-30 09:05:42,907 - root - INFO - Resetting task: reach_target
+2020-06-30 09:06:30,956 - root - INFO - Resetting task: reach_target
+2020-06-30 09:06:39,836 - root - INFO - Resetting task: reach_target
+2020-06-30 09:06:48,819 - root - INFO - Episodes 1, Evaluate reward: 1
+2020-06-30 09:06:49,323 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:49,376 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:49,426 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:49,476 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:49,528 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:49,578 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:49,631 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:49,681 - root - INFO - Resetting task: reach_target
+2020-06-30 09:06:57,245 - root - INFO - Episodes 2, Evaluate reward: 1
+2020-06-30 09:06:57,747 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:57,798 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:57,850 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:57,901 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:57,954 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:06:58,003 - root - INFO - Resetting task: reach_target
+2020-06-30 09:07:06,110 - root - INFO - Episodes 3, Evaluate reward: 1
+2020-06-30 09:07:06,612 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:06,662 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:06,713 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:06,763 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:06,816 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:06,867 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:06,919 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:06,970 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:07,023 - root - INFO - Resetting task: reach_target
+2020-06-30 09:07:14,833 - root - INFO - Episodes 4, Evaluate reward: 1
+2020-06-30 09:07:15,335 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:15,389 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:15,439 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:15,493 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:15,543 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:15,594 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:07:15,645 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:35:42,634 - root - INFO - Resetting task: reach_target
+2020-06-30 09:35:50,305 - root - INFO - Resetting task: reach_target
+2020-06-30 09:35:57,685 - root - INFO - Episodes 1, Evaluate reward: 1
+2020-06-30 09:35:58,193 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:35:58,243 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:35:58,294 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:35:58,344 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:35:58,394 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:35:58,443 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:35:58,493 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:35:58,542 - root - INFO - Resetting task: reach_target
+2020-06-30 09:36:04,497 - root - INFO - Episodes 2, Evaluate reward: 1
+2020-06-30 09:36:05,003 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:36:05,053 - root - INFO - Resetting task: reach_target
+2020-06-30 09:36:11,342 - root - INFO - Episodes 3, Evaluate reward: 1
+2020-06-30 09:36:11,848 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:36:11,897 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:36:11,944 - root - INFO - Resetting task: reach_target
+2020-06-30 09:36:18,354 - root - INFO - Episodes 4, Evaluate reward: 1
+2020-06-30 09:36:18,857 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:36:18,908 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+2020-06-30 09:36:18,958 - imageio - WARNING - Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.

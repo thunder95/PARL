@@ -10,7 +10,9 @@ from parl.utils import ReplayMemory # 经验回放
 import gym
 import rlbench.gym
 import logging
-
+import imageio
+import os
+import time
 
 MAX_EPISODES = 5000
 ACTOR_LR = 3e-4
@@ -212,6 +214,18 @@ class RLBenchAgent(parl.Agent):
             main_program=program,
             filename=filename)
 
+class ImageLogger(object):
+    def __init__(self, path):
+        self.path = path
+        self.image_dict = []
+
+    def __call__(self, _frame):
+        self.image_dict.append(_frame)
+
+    def save(self):
+        imageio.mimsave(self.path, self.image_dict, 'GIF')
+
+
 
 import argparse
 parser = argparse.ArgumentParser()
@@ -313,13 +327,14 @@ def run_train_episode(env, agent, rpm):
     return total_reward
 
 
-def run_evaluate_episode(env, agent, render):
+def run_evaluate_episode(env, agent, image_recoder):
     obs = env.reset()
     total_reward = 0
     episode_goal = np.expand_dims(obs[-3:], axis=0)
     steps = 0
     while MAX_STEPS_PER_EPISODES - steps:
         steps += 1
+        image_recoder(env.render(mode='rgb_array'))
         batch_obs = np.expand_dims(obs[8:15], axis=0)
         batch_obs_with_goal = np.concatenate((batch_obs, episode_goal), axis=1)
         action = agent.predict(batch_obs_with_goal.astype('float32'))
@@ -328,8 +343,7 @@ def run_evaluate_episode(env, agent, render):
                                 env.action_space.high[0])
 
         next_obs, reward, done, info = env.step(action)
-        if render:
-            env.render()
+        # time.sleep(0.1)
         # print(reward)
 
         obs = next_obs
@@ -339,11 +353,16 @@ def run_evaluate_episode(env, agent, render):
             break
     return total_reward
 
+is_train=False
 
-env = gym.make(args.env)
+if is_train:
+    env = gym.make(args.env)
+    logger = LoggingInstance('train.txt')
+else:
+    env = gym.make(args.env, render_mode='rgb_array')
+    logger = LoggingInstance('eval.txt')
+
 env.reset()
-
-logger = LoggingInstance('train.txt')
 obs_dim = 7
 goal_dim = 3
 
@@ -360,30 +379,51 @@ algorithm = parl.algorithms.TD3(
         critic_lr=CRITIC_LR)
 
 agent = RLBenchAgent(algorithm, obs_dim + goal_dim, act_dim)
-rpm = ReplayMemory(MEMORY_SIZE, obs_dim + goal_dim, act_dim)
 
-test_flag = 0
-store_flag = 0
-total_episodes = 16000
-while total_episodes < args.train_total_episodes:
-    train_reward = run_train_episode(env, agent, rpm)
-    total_episodes += 1
-    logger.logging_string('Episodes: {} Reward: {}'.format(total_episodes, train_reward))
-    #tensorboard.add_scalar('train/episode_reward', train_reward,total_episodes)
 
-    if total_episodes // args.test_every_episodes >= test_flag:
-        while total_episodes // args.test_every_episodes >= test_flag:
-            test_flag += 1
-        evaluate_reward = run_evaluate_episode(env, agent, render=False)
+if is_train:
+    rpm = ReplayMemory(MEMORY_SIZE, obs_dim + goal_dim, act_dim)
+
+    test_flag = 0
+    store_flag = 0
+    total_episodes = 16000
+    while total_episodes < args.train_total_episodes:
+        train_reward = run_train_episode(env, agent, rpm)
+        total_episodes += 1
+        logger.logging_string('Episodes: {} Reward: {}'.format(total_episodes, train_reward))
+        #tensorboard.add_scalar('train/episode_reward', train_reward,total_episodes)
+
+        if total_episodes // args.test_every_episodes >= test_flag:
+            while total_episodes // args.test_every_episodes >= test_flag:
+                test_flag += 1
+            evaluate_reward = run_evaluate_episode(env, agent, render=False)
+            logger.logging_string('Episodes {}, Evaluate reward: {}'.format(
+                total_episodes, evaluate_reward))
+
+            #tensorboard.add_scalar('eval/episode_reward', evaluate_reward,total_episodes)
+
+        if total_episodes // args.store_every_episodes >= store_flag:
+            while total_episodes // args.store_every_episodes >= store_flag:
+                store_flag += 1
+                agent.save_actor('RLBench/train_model/actor_' + str(total_episodes) + '.ckpt')
+                agent.save_critic('RLBench/train_model/critic_' + str(total_episodes) + '.ckpt')
+else:
+    model_idx = 160000
+    recode_path = 'RLBench/records/' + str(model_idx)
+    if not os.path.exists(recode_path):
+        os.makedirs(recode_path)
+
+    agent.restore_critic('RLBench/train_model/critic_' + str(model_idx) + '.ckpt')
+    agent.restore_actor('RLBench/train_model/actor_' + str(model_idx) + '.ckpt')
+
+    for epics in range(1, 5):
+        image_recoder = ImageLogger('RLBench/records/' + str(model_idx) + '/video_' + str(epics) + '.gif')
+        evaluate_reward = run_evaluate_episode(env, agent, image_recoder)
         logger.logging_string('Episodes {}, Evaluate reward: {}'.format(
-            total_episodes, evaluate_reward))
+            epics, evaluate_reward))
+        time.sleep(0.5)
+        image_recoder.save()
 
-        #tensorboard.add_scalar('eval/episode_reward', evaluate_reward,total_episodes)
 
-    if total_episodes // args.store_every_episodes >= store_flag:
-        while total_episodes // args.store_every_episodes >= store_flag:
-            store_flag += 1
-            agent.save_actor('RLBench/train_model/actor_' + str(total_episodes) + '.ckpt')
-            agent.save_critic('RLBench/train_model/critic_' + str(total_episodes) + '.ckpt')
-
+env.close()
 logger.decorator()

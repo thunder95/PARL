@@ -1,23 +1,24 @@
 1星环境：简单的弹跳和接球游戏：https://github.com/shivaverma/Orbit 
-gif地址:
+gif地址:https://github.com/thunder95/PARL/blob/master/assign_1/1.gif
 
 
 
 
 2星环境：GYM环境   Box2D (需要安装 box2d-py)：https://gym.openai.com/envs/#box2d
 PyGame游戏环境（含Flappy Bird）：https://github.com/ntasfi/PyGame-Learning-Environment
-gif地址：
+gif地址：https://github.com/thunder95/PARL/blob/master/assign_2/bird.gif
+https://github.com/thunder95/PARL/blob/master/assign_2/catcher.gif
 
 
 3星环境：GYM环境   Robotics (需要安装 mujoco_py和试用许可证书)：https://gym.openai.com/envs/#robotics
 股票预测环境：https://github.com/kh-kim/stock_market_reinforcement_learning
 RLSchool四轴飞行器的 速度控制任务 "velocity_control"：https://github.com/PaddlePaddle/RLSchool/tree/master/rlschool/quadrotor
 训练了股票，但是效果并不太好
-
+gif地址:https://github.com/thunder95/PARL/blob/master/assign_3/stock_1.gif
 
 4星环境：RLBench任务环境（使用机械臂完成某一项任务）：https://github.com/stepjam/RLBench
 已经安装好相关环境，也能够训练了，但是就是不能出图。
-gif地址：
+gif地址:https://github.com/thunder95/PARL/blob/master/assign_4/RLBench/records/144000/video_3.gif
 
 
 
