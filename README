@@ -25,3 +25,5 @@ gif地址:https://github.com/thunder95/PARL/blob/master/assign_4/RLBench/records
 5星环境：交通信号灯控制：https://github.com/Ujwal2910/Smart-Traffic-Signals-in-India-using-Deep-Reinforcement-Learning-and-Advanced-Computer-Vision
 sumo已经安装成功，但是sumo-gui始终不能运行，尚不明白具体原因
 
+学习td3论文的心得：
+https://aistudio.baidu.com/aistudio/projectdetail/635996
