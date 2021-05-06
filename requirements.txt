@@ -15,7 +15,7 @@ filelock==3.0.12
 flake8==3.8.3
 Flask==1.1.2
 Flask-Babel==1.0.0
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 funcsigs==1.0.2
 future==0.18.2
 graphviz==0.14
