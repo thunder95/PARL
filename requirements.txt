@@ -41,7 +41,7 @@ objgraph==3.4.1
 opencv-python==4.2.0.34
 paddlepaddle-gpu==1.6.3.post107
 parl==1.3.1
-Pillow==7.1.2
+Pillow==9.0.0
 -e git+https://github.com/ntasfi/PyGame-Learning-Environment.git@3dbe79dc0c35559bb441b9359948aabf9bb3d331#egg=ple
 pre-commit==2.5.1
 prettytable==0.7.2
