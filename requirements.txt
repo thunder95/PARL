@@ -36,7 +36,7 @@ matplotlib==3.2.2
 mccabe==0.6.1
 nltk==3.5
 nodeenv==1.4.0
-numpy==1.19.0
+numpy==1.22.0
 objgraph==3.4.1
 opencv-python==4.2.0.34
 paddlepaddle-gpu==1.6.3.post107
