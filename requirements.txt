@@ -45,7 +45,7 @@ Pillow==7.1.2
 -e git+https://github.com/ntasfi/PyGame-Learning-Environment.git@3dbe79dc0c35559bb441b9359948aabf9bb3d331#egg=ple
 pre-commit==2.5.1
 prettytable==0.7.2
-protobuf==3.12.2
+protobuf==3.18.3
 psutil==5.7.0
 pyarrow==0.13.0
 pycodestyle==2.6.0
